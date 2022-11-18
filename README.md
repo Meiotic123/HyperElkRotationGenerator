@@ -1,10 +1,10 @@
-#What is HyperElkRotationGenerator?
+<h1>What is HyperElkRotationGenerator?</h1>
 
 HyperElkRotationGenerator is a framework to build HyperElk rotation scripts in a OOP fashion. This is only necessary because we cannot package rotations up as .dll's do to HyperELk's limitation on community rotations.
 
 A very barebones Frost DK sample has been left in as an example. This example contains no rotation logic, but will show you the basics of how to utilize this tool.
 
-#Architecture
+<h1>Architecture</h1>
 
 RotationGenerator -> Logic to generate the actual rotations.
 
@@ -14,7 +14,7 @@ BaseClasses -> Where you add class specific logic for a rotation. A single base 
 
 Specalizations -> Where you add spec specific logic for a rotation. A single spec class should get used per rotation.
 
-#How to use
+<h1>How to use</h1>
 
 Step 1: Clone down the repo.
 
