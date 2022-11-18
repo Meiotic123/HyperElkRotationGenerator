@@ -30,9 +30,9 @@ namespace HyperElk.Core
             if (_instance == null)
             {
                 _instance = new UniversalRoutine(true);
-                _class = new Deathknight(true)
-;                _spec = new FrostDK()
-;            }
+                _class = new Deathknight(true);
+                _spec = new FrostDK();
+            }
 
             _class.Initialize();
         }

@@ -18,7 +18,6 @@ foreach (string rotationFile in rotationFiles)
     File.Delete(rotationFile);
 }
 
-
 foreach (string specializationFile in specializationFiles)
 {
     string baseClass = "";
@@ -52,14 +51,14 @@ foreach (string specializationFile in specializationFiles)
             {
                 if (line.Contains("//_class = new UniversalRoutine(true)"))
                 {
-                    string replacement = "_class = new " + baseClass.Split(".")[0] + "(true)" + "\n";
-                    string replacedLine = line.Replace("//_class = new UniversalRoutine(true)", replacement);
+                    string replacement = "_class = new " + baseClass.Split(".")[0] + "(true);" + "\n";
+                    string replacedLine = line.Replace("//_class = new UniversalRoutine(true);", replacement);
                     copyLines += replacedLine;
                 }
                 else if (line.Contains("//_spec = new UniversalRoutine()"))
                 {
-                    string replacement = "_spec = new " + outputFile.Split(".")[0] + "()" + "\n";
-                    string replacedLine = line.Replace("//_spec = new UniversalRoutine()", replacement);
+                    string replacement = "_spec = new " + outputFile.Split(".")[0] + "();" + "\n";
+                    string replacedLine = line.Replace("//_spec = new UniversalRoutine();", replacement);
                     copyLines += replacedLine;
                 }
                 else
