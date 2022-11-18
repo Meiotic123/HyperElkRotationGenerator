@@ -24,8 +24,8 @@ Step 3: In the solution explorer, right click and select Add Project Reference.
 
 Step 4: Navigate to your HyperElk install foloder, go to the API folder, and select DemoAPI.dll and select ok.
 
-Step 5: Build and run the project.
+Step 5: Before your first built, locate the "GeneratedRotations" folder, right click it, and select "Exclude from project".
 
-Step 6: The first time it runs, a new folder will be created called "GeneratedRotations". Right click it and select "Exclude from project".
+Step 6: Build and run the project.
 
 Step 7: Within HyperElk, navigate to your new custom rotation folder and select the appropriate rotation for your current class/spec.
